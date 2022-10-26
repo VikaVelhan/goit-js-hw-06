@@ -5,11 +5,11 @@ const btnIncrement = document.querySelector('[data-action="increment"]');
 
 const onDecrementClick = () => {
   counterValue -= 1;
-  counterEl.textContent = counterValue;
+  document.querySelector("#value").textContent = counterValue;
 };
 const onIncrementClick = () => {
   counterValue += 1;
-  counterEl.textContent = counterValue;
+  document.querySelector("#value").textContent = counterValue;
 };
 
 btnDecrement.addEventListener("click", onDecrementClick);
