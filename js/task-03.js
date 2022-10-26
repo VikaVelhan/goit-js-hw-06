@@ -17,10 +17,14 @@ const galleryEl = document.querySelector(".gallery");
 
 const markup = images
   .map(({ url, alt }) => {
-    return `<li><img src="${url}" alt="${alt}" width=300/></li>`;
+    return `<li><img src="${url}" alt="${alt}" width=300 height =206/></li>`;
   })
   .join("");
 
 console.log(markup);
 galleryEl.insertAdjacentHTML("beforeend", markup);
+galleryEl.style.listStyle = "none";
+galleryEl.style.display = "flex";
+galleryEl.style.justifyContent = "space-between";
+galleryEl.style.padding = "0";
 galleryEl.style.backgroundColor = "pink";
